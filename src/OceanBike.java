@@ -6,10 +6,21 @@ public class OceanBike {
     
     public static void main(String[] args) {
         
-        
     }
 
-    public static void startOceanBikeSpeed(int i) {
+    public static void startOceanBikeSpeed(int bikeOn) {
 
+    }
+
+    public int getCurrentOceanBikeSpeed() {
+        return 0;
+    }
+
+    public void setCurrentGear(String neutral) {
+
+    }
+
+    public String getCurrentGear() {
+        return  gear;
     }
 }
