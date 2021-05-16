@@ -26,4 +26,16 @@ public class OceanBiketest {
 
         assertEquals(alpha12, alpha12);
     }
+
+    @Test
+
+    public void testThatFuelGuageIsSet() {
+        OceanBike alpha13 = new OceanBike();
+        alpha13.setFuelGauge("Empty");
+
+        String lunar13 = alpha13.getCurrentFuelFuelGauge();
+
+        assertEquals(alpha13, alpha13);
+
+    }
 }

@@ -23,4 +23,11 @@ public class OceanBike {
     public String getCurrentGear() {
         return  gear;
     }
+
+    public void setFuelGauge(String empty) {
+    }
+
+    public String getCurrentFuelFuelGauge() {
+        return fuelGuage;
+    }
 }
