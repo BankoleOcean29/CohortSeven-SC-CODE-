@@ -1,33 +1,16 @@
 public class OceanBike {
-    
-    private int SpeedInKmPerHour;
-    private String gear;
-    private String fuelGuage;
-    
-    public static void main(String[] args) {
-        
-    }
+    boolean bikeOnOrOff;
+    int speedInKmPerHour;
+    int gear;
+    String fuelGauge;
 
-    public static void startOceanBikeSpeed(int bikeOn) {
+    public static void main(String[] halo) {
 
     }
 
-    public int getCurrentOceanBikeSpeed() {
-        return 0;
+    public void bikeOn(boolean b) {
     }
 
-    public void setCurrentGear(String neutral) {
-
-    }
-
-    public String getCurrentGear() {
-        return  gear;
-    }
-
-    public void setFuelGauge(String empty) {
-    }
-
-    public String getCurrentFuelFuelGauge() {
-        return fuelGuage;
+    public void bikeoff(boolean b) {
     }
 }
