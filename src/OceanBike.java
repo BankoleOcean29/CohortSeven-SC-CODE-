@@ -9,7 +9,7 @@ public class OceanBike {
         
     }
 
-    public static void setOceanBikeSpeed(int i) {
+    public static void startOceanBikeSpeed(int i) {
 
     }
 }

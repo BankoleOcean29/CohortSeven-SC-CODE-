@@ -4,9 +4,9 @@ public class OceanBiketest {
 
     @Test
 
-    public void testThatOceanBikeSpeedCanBeSet() {
+    public void testThatOceanBikeCanComeOn() {
         OceanBike alpha = new OceanBike();
-        OceanBike.setOceanBikeSpeed(0);
+        OceanBike.startOceanBikeSpeed(0);
 
     }
 }
