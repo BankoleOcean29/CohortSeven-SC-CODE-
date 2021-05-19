@@ -30,32 +30,26 @@ public class AlgoR {
 
         if (score >= 90 && score < 101) {
             System.out.println("A, you're a G");
+        } else if ( score < 90 && score > 79) {
+            System.out.println("B, semi G");
         }
 
-       if (score < 90 && score > 79 ){
-           System.out.println("B, semi G");
-       }
-
-       if (score < 80 && score > 69) {
+        if (score < 80 && score > 69) {
            System.out.println("C, semi demi G");
        }
-
-       if (score < 70 && score > 59) {
+         else if (score < 70 && score > 59) {
            System.out.println("you got a D");
        }
 
        if (score < 60 && score >= 0) {
            System.out.println("F...try again");
        }
-
-       if (score > 100) {
+       else if (score > 100) {
            System.out.println("Please input a valid score");
        }
-
-       if (score < 0) {
+       else if (score < 0) {
            System.out.println("Please input a valid score");
        }
-
 
     }
 }
