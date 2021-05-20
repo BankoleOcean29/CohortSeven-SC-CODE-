@@ -82,12 +82,39 @@ public class TelevisionTest{
         television.increaseVolume();
         assertEquals(2, television.getVolume());
 
+    }
+
+    @Test
+
+        void testThatVolumeDecreases() {
+        television.setOn(true);
+        assertTrue(television.getOn());
+
+        television.increaseVolume();
+        assertEquals(1, television.getVolume());
+        television.increaseVolume();
+        assertEquals(2,television.getVolume());
+
+        television.decreaseVolume();
+        assertEquals(1,television.getVolume());
 
     }
 
     @Test
 
-    void testThatVolumeDecreases() {
+    void testThatChannelChangesInAscendingNotation() {
+        television.setOn(true);
+        assertFalse(!television.getOn());
+
+        television.increaseChannel();
+        assertEquals(1,television.getChannel());
+
+        television.increaseChannel();
+        assertEquals(2, television.getChannel());
 
     }
+
+
+
+
 }

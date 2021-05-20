@@ -3,6 +3,7 @@ package com;
 public class Television {
     private boolean on;
     private int volume;
+    private int channel;
 
 
     public boolean getOn() {
@@ -19,10 +20,18 @@ public class Television {
     }
 
     public int getChannel() {
-        return 0;
+        return channel;
     }
 
     public void increaseVolume() {
         volume++;
+    }
+
+
+    public void decreaseVolume() { volume--;
+    }
+
+
+    public void increaseChannel() { channel++;
     }
 }
