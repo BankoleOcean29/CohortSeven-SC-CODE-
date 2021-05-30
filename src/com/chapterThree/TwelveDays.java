@@ -1,109 +1,109 @@
 package com.chapterThree;
 
-import java.util.Scanner;
-
 public class TwelveDays {
-    public static void main(String[] args) {
-        Scanner prompt = new Scanner(System.in);
 
-        String dayOne = """
-                On the first day of Christmas my true love gave to me""";
+    public static void main(String [] args)
+    {
 
-        String dayTwo = """
-                On the second day of Christmas my true love gave to me""";
+        for(int verse=1; verse<=12;verse++)
+        {
+            System.out.print("On the ");
 
-        String dayThree = """
-                On the third day of Christmas my true love gave to me""";
+            switch(verse)
+            {
+                case 1:
+                    System.out.print("First");
+                    break;
 
-        String dayFour = """
-                On the fourth day of Christmas my true love gave to me""";
+                case 2:
+                    System.out.print("Second");
 
-        String dayFive = """
-                On the fifth day of Christmas my true love gave to me""";
+                case 3:
+                    System.out.print("Third");
+                    break;
 
-        String daySix = """
-                On the sixth day of Christmas my true love gave to me""";
+                case 4:
+                    System.out.print("Fourth");
+                    break;
 
-        String daySeven = """
-                On the seventh day of Christmas my true love gave to me""";
+                case 5:
+                    System.out.print("Fifth");
+                    break;
 
-        String dayEight = """
-                On the eighth day of Christmas my true love gave to me""";
+                case 6:
+                    System.out.print("Sixth");
+                    break;
 
-        String dayNine = """
-                On the ninth day of Christmas my true love gave to me""";
+                case 7:
+                    System.out.print("Seventh");
+                    break;
 
-        String dayTen = """
-                On the tenth day of Christmas my true love gave to me""";
+                case 8:
+                    System.out.print("Eighth");
+                    break;
 
-        String dayEleven = """
-                On the eleventh day of Christmas my true love gave to me""";
+                case 9:
+                    System.out.print("Ninth");
+                    break;
 
-        String dayTwelve = """
-                On the twelfth day of Christmas my true love gave to me""";
+                case 10:
+                    System.out.print("Tenth");
+                    break;
 
-        String giftOne = """
-                A partridge in a pear tree""";
+                case 11:
+                    System.out.print("Eleventh");
+                    break;
 
-        String giftTwo = """
-                Two turtle doves and a""";
+                case 12:
+                    System.out.print("Twelfth");
+                    break;
 
-        String giftThree = """
-                Three French hens,""";
+            }
 
-        String giftFour = """
-                Four calling birds,""";
-
-        String giftFive = """
-                Five gold rings,""";
-
-        String giftSix = """
-                Six geese a laying,""";
-
-        String giftSeven = """
-                Seven swans a swimming,""";
-
-        String giftEight = """
-                Eight maids a milking,""";
-
-        String giftNine = """
-                Nine ladies dancing,""";
-
-        String giftTen = """
-                Ten lords a leaping,""";
-
-        String giftEleven = """
-                Eleven pipers piping,""";
-
-        String giftTwelve = """
-                Twelve drummers drumming,""";
+            System.out.println(" day of Christmas my true love gave to me ");
 
 
-    int sentinel = 13;
-    int number = 0;
+            switch(verse)
+            {
+                case 12:
+                    System.out.println(" twelve Drummers Drumming ");
 
-    while(sentinel != number) {
-        System.out.println("Type in numbers 1 to 12 to get the verses of the twelve days of Christmas song or press 13 to exit");
-        number = prompt.nextInt();
+                case 11:
+                    System.out.println(" eleven Pipers piping ");
 
-        if(number == 1) {
-            System.out.println(dayOne + " " + giftOne);
+                case 10:
+                    System.out.println(" ten Lords a leaping ");
+
+                case 9:
+                    System.out.println("nine Ladies Dancing ");
+
+                case 8:
+                    System.out.println(" eight Maids a milking ");
+
+                case 7:
+                    System.out.println(" seven Swans a swimming ");
+
+                case 6:
+                    System.out.println(" six Geese a laying ");
+
+                case 5:
+                    System.out.println(" five Golden Rings ");
+
+                case 4:
+                    System.out.println(" four Calling Birds ");
+
+                case 3:
+                    System.out.println(" three French Hens ");
+
+                case 2:
+                    System.out.println(" two Turtle Doves ");
+
+                case 1:
+                    System.out.println(" A partridge in a pear tree ");
+
+            }
+
         }
-        if (number == 2) {
-            System.out.println(dayTwo + " " + giftOne + " " + giftTwo);
-        }
-        if (number == 3) {
-            System.out.println(dayThree + " " + giftOne + " " + giftTwo + " " + giftThree);
-        }
-        if (number == 4) {
-            System.out.println(dayFour + " " + giftOne + " " + giftTwo + " " + giftThree + " " + giftFour);
-        }
-    }
-
-
-
-
-
 
     }
 }
