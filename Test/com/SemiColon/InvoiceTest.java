@@ -30,6 +30,30 @@ public class InvoiceTest {
     public void testThatInvoiceIncludesPartDescription() {
         Invoice invoice = new Invoice();
         invoice.getPartDescription();
+        assertEquals(null, invoice.getPartDescription());
 
     }
+
+    @Test
+
+    public void testThatInvoiceIncludesQuantity() {
+        Invoice invoice = new Invoice();
+        invoice.getQuantity();
+        assertEquals(0, invoice.getQuantity());
+    }
+
+    @Test
+
+    public void testThatInvoiceIncludesPrice() {
+        Invoice invoice = new Invoice();
+        assertEquals(0, invoice.getPrice());
+    }
+
+    @Test
+
+    public void testThatInvoiceAmountIsIncluded() {
+        Invoice invoice = new Invoice();
+        assertEquals(0, invoice.getInvoiceAmount());
+    }
+
 }

@@ -114,5 +114,27 @@ public class TelevisionTest{
 
     }
 
+    @Test
+
+    void testThatChannelChangesInDescendingNotation() {
+        television.setOn(true);
+        assertTrue(television.getOn());
+
+        television.increaseChannel();
+        television.increaseChannel();
+        television.increaseChannel();
+
+        television.decreaseChannel();
+        assertEquals(2, television.getChannel());
+    }
+
+    @Test
+
+    public  void  testThatChannelIsZeroWhenTurnedOff() {
+        television.setOn(false);
+
+        assertEquals(0,television.getChannel());
+
+    }
 
 }

@@ -19,7 +19,7 @@ public class Comparison {
             System.out.println(secondNumberIn + " is larger than " + firstNumberIn);
         }
 
-        if (firstNumberIn == secondNumberIn) {
+        if (firstNumberIn == secondNumberIn)  {
             System.out.println("These numbers are equal");
         }
     }

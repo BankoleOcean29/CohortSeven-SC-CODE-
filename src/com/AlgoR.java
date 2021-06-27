@@ -15,9 +15,8 @@ Print out students grade that corresponds with his/her score.
 
 
  */
-import com.sun.source.util.SourcePositions;
 
-import javax.sound.midi.Soundbank;
+
 import java.util.Scanner;
 
 public class AlgoR {

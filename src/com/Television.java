@@ -34,4 +34,7 @@ public class Television {
 
     public void increaseChannel() { channel++;
     }
+
+    public void decreaseChannel() { channel--;
+    }
 }

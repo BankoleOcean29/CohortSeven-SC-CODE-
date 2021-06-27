@@ -8,11 +8,10 @@ public class DifferentOperations {
 
             Scanner input = new Scanner(System.in);
 
-            System.out.println("Type in three numbers");
+            System.out.println("Type in five numbers");
             int firstNumberIn = input.nextInt();
             int secondNumberIn = input.nextInt();
             int thirdNumberIn = input.nextInt();
-
             int sum;
             int average;
             int product;
