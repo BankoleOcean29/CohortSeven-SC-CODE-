@@ -44,4 +44,11 @@ public class Account {
     public void setAccountPin(int accountPin) {
         this.accountPin = accountPin;
     }
+
+    public double getbalance() {
+        return 0;
+    }
+
+    public void setBalance(double newBalance) {
+    }
 }

@@ -47,4 +47,26 @@ public class CustomerClass {
     public void setNewAccount(Account newAccount) {
         this.newAccount = newAccount;
     }
+
+    public void deposit(double amount) {
+        double accountBalance = newAccount.getbalance();
+        double newBalance = accountBalance + amount;
+        newAccount.setBalance(newBalance);
+
+    }
+
+    public void withdraw(int accountPin, int amount) {
+        double accountBalance = newAccount.getAccountBalance();
+        if (accountPin == newAccount.getAccountPin()) {
+        double newAccountBalance = accountBalance - amount;
+        newAccount.setAccountBalance(newAccountBalance);
+
+    } else {
+            System.out.println("Invalid pin");
+        }
+    }
+
+    public void transfer (int otherAccount, double amount, int pin) {
+
+    }
 }
