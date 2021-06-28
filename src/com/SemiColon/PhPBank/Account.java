@@ -3,17 +3,14 @@ package com.SemiColon.PhPBank;
 public class Account {
 
     private String accountName;
-    private int accountNumber;
+    private final int accountNumber;
     private double accountBalance;
     private int accountPin;
     private static int accountGenerator;
 
-    public Account(String accountName, String accountNumber, double accountBalance, int accountPin) {
+    public Account(){
         accountGenerator++;
-        this.accountName = accountName;
         this.accountNumber = accountGenerator;
-        this.accountBalance = accountBalance;
-        this.accountPin = accountPin;
     }
 
     public String getAccountName() {
@@ -46,9 +43,10 @@ public class Account {
     }
 
     public double getbalance() {
-        return 0;
+        return accountBalance;
     }
 
     public void setBalance(double newBalance) {
+        this.accountBalance = accountBalance;
     }
 }

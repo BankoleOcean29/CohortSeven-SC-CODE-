@@ -8,6 +8,10 @@ public class CustomerClass {
     private int phoneNumber;
     private Account newAccount;
 
+    public CustomerClass(){
+        newAccount = new Account();
+    }
+
     public String getFirstName() {
         return firstName;
     }
@@ -43,10 +47,10 @@ public class CustomerClass {
     public Account getNewAccount() {
         return newAccount;
     }
-
-    public void setNewAccount(Account newAccount) {
-        this.newAccount = newAccount;
-    }
+//
+//    public void setNewAccount(Account newAccount) {
+//        this.newAccount = newAccount;
+//    }
 
     public void deposit(double amount) {
         double accountBalance = newAccount.getbalance();
@@ -55,18 +59,37 @@ public class CustomerClass {
 
     }
 
-    public void withdraw(int accountPin, int amount) {
+    public void withdraw(double amount, int accountPin) {
         double accountBalance = newAccount.getAccountBalance();
         if (accountPin == newAccount.getAccountPin()) {
         double newAccountBalance = accountBalance - amount;
         newAccount.setAccountBalance(newAccountBalance);
-
-    } else {
+        } else {
             System.out.println("Invalid pin");
         }
     }
 
-    public void transfer (int otherAccount, double amount, int pin) {
+    public void transfer (double amount, int pin) {
+        double accountBalance = newAccount.getAccountBalance();
+        withdraw( amount, pin);
+        deposit(amount);
+    }
 
+    public void accountFirstName(String firtsName){
+        newAccount.setAccountName(firtsName);
+        this.firstName = firtsName;
+    }
+
+    public void accountSetPin(int pin) {
+        if (pin > 999 && pin < 10000){
+        newAccount.setAccountPin(pin);}
+    }
+
+    public int getCustomerAccountNumber(){
+        return newAccount.getAccountNumber();
+    }
+
+    public int getPin() {
+        return newAccount.getAccountPin();
     }
 }
